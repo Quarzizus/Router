@@ -1,0 +1,38 @@
+$height-Header : 120px;
+$font: Tahoma;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Universo{
+    display: grid;
+    background-color: rgba(111, 67, 151, 0.801);
+    grid-template-rows: 120px minmax(calc(100vh - 120px), auto);
+
+    .Header{
+        display: grid;
+        ul{
+            display: flex;
+            background-color: rgb(85, 137, 182);
+            justify-content: space-around;
+            align-items: center;
+            li{
+                list-style: none;
+                a{
+                    font-size: 20px;
+                    font-family: $font;
+                    color: white;
+                }
+            }
+        }
+    }
+    .Main{
+        grid-row: 2/3;
+        background-color: rgb(24, 24, 23);
+        color: white;
+        font-family: $font;
+        font-size: 25px;
+    }
+}
